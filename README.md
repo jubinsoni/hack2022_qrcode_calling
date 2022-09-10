@@ -5,11 +5,11 @@
 2) scan qr code for virtual tour guide 
 3) scan qr code to talk to customer support
 
-cd hackathon/demo_app
-pip3 install flask-cors
+cd hack2022_qrcode_calling/demo_app 
+pip3 install flask-cors 
 python3 -m flask run -h 192.168.1.20
 
-cd hackathon/my-app1
+cd hack2022_qrcode_calling/my-app1 
 yarn start
 
 
