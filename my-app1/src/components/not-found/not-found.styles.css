@@ -1,0 +1,23 @@
+.not-found {
+    width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 3px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 100px;
+    border-radius: 20px;
+}
+
+.not-found-para{
+    font-size: 40px;
+    text-align: center;
+}
+
+@media (max-width: 479px) {
+    .not-found {
+        width: 80%;
+        padding: 10px;
+    }
+}

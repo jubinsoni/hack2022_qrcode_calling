@@ -1,0 +1,173 @@
+.card-details {
+    width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-details-video{
+    /* border-top: 1px solid grey;
+    border-left: 1px solid grey; */
+    border-bottom: 3px solid grey;
+}
+
+.card-details-contents{
+    padding: 30px;
+    font-size: 25px;
+    /* border-top: 1px solid grey;
+    border-right: 1px solid grey; */
+    border-bottom: 3px solid grey;
+}
+.card-details-examples{
+    font-size: 15px;
+    padding: 20px;
+}
+/* .card-details-examples-contents{
+    padding: 10px;
+} */
+
+button{
+    background: linear-gradient(to right, #f8b3b5 0%, #f8b3b5 50%, #ffffff 50%, #ffffff 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.3s;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-position:0 0;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+video{
+    width: 50%;
+    height: auto;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+@media (max-width: 479px) {
+    .card-details {
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+}
+
+.check-box-group{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #95dada; */
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+.check-box-group:hover {
+    transform: scale(1.05);
+}
+
+.Makerequest{
+    margin:0 auto;
+    display:block;
+}
+
+.Makerequest1{
+    padding: 20px;
+}
+
+.confirm-box2{
+    padding:20px;
+}
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    float:right;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    float:right;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a Pink background */
+  .container input:checked ~ .checkmark {
+    background-color: #f8b3b5;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    float:right;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    right: 2px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

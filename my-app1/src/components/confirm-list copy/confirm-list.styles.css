@@ -1,0 +1,114 @@
+.card-details {
+    width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-details-video{
+    /* border-top: 1px solid grey;
+    border-left: 1px solid grey; */
+    border-bottom: 3px solid grey;
+}
+
+.card-details-contents{
+    padding: 30px;
+    font-size: 25px;
+    /* border-top: 1px solid grey;
+    border-right: 1px solid grey; */
+    border-bottom: 3px solid grey;
+}
+.card-details-examples{
+    font-size: 15px;
+    padding: 20px;
+}
+/* .card-details-examples-contents{
+    padding: 10px;
+} */
+
+button{
+    background: linear-gradient(to right, #f8b3b5 0%, #f8b3b5 50%, #ffffff 50%, #ffffff 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.3s;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-position:0 0;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+video{
+    width: 50%;
+    height: auto;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+@media (max-width: 479px) {
+    .card-details {
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+}
+
+.confirm-box{
+    /*
+    display: flex;
+    flex-direction: column;
+    border: 0px solid grey;
+    border-radius: 5px;
+    padding: 25px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+    */
+
+    width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 3px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.Makerequest{
+    margin:0 auto;
+    display:block;
+}
+
+.Makerequest1{
+    padding: 20px;
+}
+
+.Makerequest3{
+    
+}
